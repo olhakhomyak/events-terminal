@@ -1,0 +1,91 @@
+.HeaderContainer {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: auto 40%;
+  justify-content: space-between;
+  border-bottom: 1px solid #E3E3E3;
+  padding: 1em 3em;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.MainLogo {
+  height: 2.5em;
+}
+
+.HeaderNavlist {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1em;
+  align-items: center;
+}
+
+.HeaderLogoLink {
+  text-decoration: none;
+}
+
+.HeaderLink {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.HeaderLink:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: #000;
+  height: 3px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.HeaderLink:hover:after,
+.HeaderLink:focus:after,
+.HeaderLink:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.HeaderColoured {
+  transition: 500ms ease;
+  background-color: #0e3824;
+  opacity: .95;
+}
+
+.HeaderColoured .HeaderLink,
+.HeaderColoured .HeaderLogoLink span {
+  color: #fff;
+}
+
+.HeaderColoured .HeaderLink:after {
+  background: #fff;
+}
+
+.HeaderTransparent {
+  transition: 500ms ease;
+  background-color: #fff;
+  opacity: .75;
+}
+
+.HeaderTransparent .HeaderLink,
+.HeaderTransparent .HeaderLogoLink span {
+  color: #000;
+}
+
+.HeaderTransparent .HeaderLink:after {
+  background: #000;
+}

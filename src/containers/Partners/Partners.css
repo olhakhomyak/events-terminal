@@ -1,0 +1,24 @@
+.PartnersContainer {
+  height: 60vh;
+  margin: 0 auto;
+}
+
+.PartnersWrapper {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5em;
+}
+
+.PartnersTitle {
+  font-size: 2.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1em auto 0;
+}
+
+.PartnerLogo {
+  max-width: 100%;
+}

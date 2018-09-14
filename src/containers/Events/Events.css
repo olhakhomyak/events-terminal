@@ -1,0 +1,38 @@
+.EventsContainer {
+  width: 80%;
+  margin: 7em auto 3em;
+}
+
+.EventsTitle {
+  font-size: 2.5em;
+  letter-spacing: .1em;
+  margin: .5em;
+}
+
+.CategoriesWrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  grid-gap: 50px;
+}
+
+.CategoryItem {
+  background-color: #0e3824;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  height: 8em;
+  border-radius: 3px;
+}
+
+.CategoryItem a {
+  color: #fff;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.CategoryItem:hover {
+  transition: 500ms ease;
+  background-color: #1f543a;
+}

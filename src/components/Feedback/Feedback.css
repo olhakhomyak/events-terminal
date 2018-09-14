@@ -1,0 +1,45 @@
+.FeedbackItem {
+  height: 100%;
+  max-height: 320px;
+  display: grid;
+  justify-content: space-between;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 3em 2em 2em;
+  background-color: #fff;
+}
+
+.FeedbackItem > blockquote {
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+.AuthorInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: 600;
+}
+
+.AuthorName {
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.AuthorPosition {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.AuthorDetails {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.AuthorPhoto {
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-self: flex-end;
+  margin-right: 1em;
+}
